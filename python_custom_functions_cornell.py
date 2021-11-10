@@ -280,7 +280,11 @@ squares_and_cubes = [(n ** 2, n ** 3) for n in range(100)]
 
 # make a Cesar cipher for coded messages
 letters = 'abcdefghijklmnopqrstuvwxyz'
-# cesar_cipher = [letters[i]: letters[i-3] for i in range(len(letters))]
+
+cesar_cipher = {letters[i]: letters[i-3] % len(letters) for i in range(len(letters))}
+
+
+
 my_evens2 = [n for n in my_list if n % 2 == 0]
 # print(my_evens2)
 s = '1,abc,33'
