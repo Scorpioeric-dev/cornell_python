@@ -94,11 +94,13 @@ def compound_by_period(balance, rate, num_periods):
     return balances
 
 
-print(compound_by_period(100, 0.03, 10))
+print(compound_by_period(0.01, 1, 30))
+total = compound_by_period(0.01, 1, 30)
 
+print(total.pop())
 
 mylist = compound_by_period(100, 0.03, 10)
-print(mylist)
+# print(mylist)
 
 
 def change_per_period(mylist):
@@ -113,15 +115,15 @@ def change_per_period(mylist):
     return new_list
 
 
-print(change_per_period(mylist))
+# print(change_per_period(mylist))
 
 
 # wheat challenge answers
 wheat = compound_by_period(1, 1, 63)
-print(wheat)
+# print(wheat)
 
 total_wheat = sum(wheat)
-print(total_wheat)
+# print(total_wheat)
 
 # print(wheat)
 # total_wheat = sum(wheat)
