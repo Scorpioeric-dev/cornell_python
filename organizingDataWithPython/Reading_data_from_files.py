@@ -18,7 +18,6 @@ print(datadict['data'].keys())
 
 # last updated
 print(datadict['last_updated'])
-
 print(time.ctime(datadict['last_updated']))
 
 nums = np.array([1, 2, 3, 4, 5, 7, 8, 9, 10])
